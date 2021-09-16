@@ -50,6 +50,10 @@ $(".list-group").on("click", "p", function() {
         .text()
         .trim();
     console.log(text);
+    var textInput = $("<textarea>")
+        .addClass("form-control")
+        .val(text);
+    $(this).replaceWith(textInput);
 });
 
 
